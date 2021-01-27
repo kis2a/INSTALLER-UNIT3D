@@ -53,6 +53,4 @@ return [
 
     /* API Keys */
     'tmdb-key' => '',
-    'omdb-key' => '',
-    'igdb-key' => '',
 ];
