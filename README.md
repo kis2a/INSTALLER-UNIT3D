@@ -9,7 +9,7 @@
 <p align="center"><b>NOTE: This only works for a fresh server with nothing on it but a new OS install!</b></p>
 
 ## This Repository
-Installer for the [UNIT3D Torrent Tracker Platform](https://github.com/HDInnovations/UNIT3D-Community-Edition).
+Installer for the [UNIT3D Torrent Tracker Platform](https://github.com/kis2a/UNIT3D-Community-Edition).
 
 **Officially Supported OS's**
 - Ubuntu 20.04 LTS (Recommended)
@@ -22,14 +22,3 @@ git clone https://github.com/kis2a/UNIT3D-INSTALLER.git installer
 cd installer
 sudo ./install.sh
 ```
-
-
-
-### General Support
-You can find us on the [UNIT3D Discord](https://discord.gg/7JSKn5DwHT). 
-
-We can help you determine if your issue should be posted on GitHub.
-
-
-### Suggestions and/or Bug Reporting
-We encourage the use of [GitHub Issues](https://github.com/poppabear8883/UNIT3D-INSTALLER/issues/new)!
