@@ -41,8 +41,8 @@ return [
 
     /* Mail */
     'mail_driver' => 'smtp',
-    'mail_host' => '',
-    'mail_port' => '',
+    'mail_host' => 'smtp@gmail.com',
+    'mail_port' => '587',
     'mail_username' => '',
     'mail_password' => '',
     'mail_from_name' => '',
