@@ -5,7 +5,7 @@ use App\Installer\Database\MySqlSetup;
 return [
     'min_php_version' => '7.4',
 
-    'repository' => 'https://github.com/kis2a/UNIT3D/tree/kis2a.git',
+    'repository' => 'https://github.com/kis2a/UNIT3D.git',
 
     'database_installers' => [
         /**
