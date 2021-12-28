@@ -33,6 +33,17 @@ add_ppa() {
 
     echo -e "$IGreen OK $Color_Off"
 }
+# Adds PPA's
+add_ppa_phpMyAdmin() {
+    echo -e "\n$Cyan Adding PPA Repositories ... $Color_Off"
+
+    for ppa in "$@"; do
+        add-apt-repository -y $ppa > /dev/null 2>&1
+        check $? "Adding $ppa Failed!"
+    done
+
+    echo -e "$IGreen OK $Color_Off"
+}
 
 # Installs Environment Prerequisites
 add_pkgs() {
@@ -95,7 +106,7 @@ check() {
 check_locale
 
 add_ppa ppa:linuxuprising/libpng12 ppa:ondrej/php
-add_ppa ppa:nijel/phpmyadmin
+add_ppa_phpMyAdmin ppa:nijel/phpmyadmin
 
 add_pkgs
 
