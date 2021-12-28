@@ -54,6 +54,16 @@ add_pkgs() {
     echo -e "$IGreen OK $Color_Off"
 }
 
+# Installs phpMyAdmin
+install_phpMyAdmin() {
+    echo -e "\n$Cyan Installing phpMyAdmin ... $Color_Off"
+
+    sudo apt-get -y install phpmyadmin
+    check $? "Installing phpMyAdmin Failed!"
+
+    echo -e "$IGreen OK $Color_Off"
+}
+
 # Installs Composer
 install_composer() {
     echo -e "\n$Cyan Installing Composer ... $Color_Off"
@@ -85,8 +95,11 @@ check() {
 check_locale
 
 add_ppa ppa:linuxuprising/libpng12 ppa:ondrej/php
+add_ppa ppa:nijel/phpmyadmin
 
 add_pkgs
+
+install_phpMyAdmin
 
 install_composer
 
